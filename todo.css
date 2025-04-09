@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+   
+}
+:root{
+    --primary-color : rgb(5, 5, 94);
+    --asst-color: white;
+    --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --main-color: coral;
+}
+.container{
+    width: 70%;
+    height: auto;
+    background-color: var(--asst-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+    box-shadow: 1px 4px 7px var(--primary-color);
+    gap: 15px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+}
+h2{
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+#taskName{
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    font-family: var(--font-family);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid;
+    box-shadow: 1px 3px 7px var(--primary-color);
+}
+#taskName:focus{
+    outline: 1px solid var(--main-color);
+}
+#taskDate{
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    font-family: var(--font-family);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid;
+    box-shadow: 1px 3px 7px var(--primary-color);
+}
+#taskDate:focus{
+    outline: 1px solid var(--main-color);
+}
+#taskTime{
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    font-family: var(--font-family);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid;
+    box-shadow: 1px 3px 7px var(--primary-color);
+}
+#taskTime:focus{
+    outline: 1px solid var(--main-color);
+}
+#addTaskBtn{
+    width: 50%;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: var(--asst-color);
+    font-family: var(--font-family);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px var(--main-color);
+}
+#addTaskBtn:hover{
+    transform: scale(1.07);
+}
+#addTaskBtn:active{
+    transform: scale(0.9)
+}
+#task{
+    width: 100%;
+    height: auto;
+    font-family: var(--font-family);
+    background-color: var(--main-color);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 3px 7px var(--primary-color);
+
+}
+.delBtn{
+    width: 70%;
+    height: 25px;
+    background-color: red;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    color: var(--asst-color);
+    border-radius: 7px;
+    box-shadow: 0 5px var(--primary-color);
+    font-weight: normal;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+.delBtn:hover{
+    transform: scale(1.07);
+}
+.delBtn:active{
+    transform: scale(0.9)
+}
+.task{
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+.task span{
+    display: block;
+}
+
